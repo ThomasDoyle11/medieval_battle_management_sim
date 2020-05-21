@@ -1,0 +1,22 @@
+{
+    "_personID": 5,
+    "_personType": 1,
+    "_squadronID": 0,
+    "_motherID": -1,
+    "_fatherID": -1,
+    "_partnerID": 0,
+    "_childrenIDs": [],
+    "_isMale": false,
+    "_firstName": "Dragona",
+    "_houseID": 22,
+    "_birthDate": 471896,
+    "_deathDate": -1,
+    "_attack": 19,
+    "_defence": 10,
+    "_speed": 25,
+    "_troops": 100,
+    "_leadership": 3,
+    "_healing": 0,
+    "_training": 9,
+    "_cost": 686
+}
