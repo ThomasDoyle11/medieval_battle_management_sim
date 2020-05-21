@@ -1,0 +1,50 @@
+{
+    "_squadronID": 125,
+    "_name": "Casterfell",
+    "_region": 1,
+    "_location": [302, 754],
+    "_battlePower": 49,
+    "_attack": 47,
+    "_defence": 52,
+    "_speed": 52,
+    "_squadronLordID": 2625,
+    "_cash": 11300,
+    "_colours": [{
+            "_colour": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "_name": "black",
+            "_isLight": false
+        }, {
+            "_colour": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "_name": "white",
+            "_isLight": true
+        }, {
+            "_colour": {
+                "r": 0.25,
+                "g": 0.25,
+                "b": 0.25,
+                "a": 1.0
+            },
+            "_name": "dark grey",
+            "_isLight": false
+        }
+    ],
+    "currentCompSquadIDs": [180, 247, 737, 998],
+    "previousCompSquadIDs": [],
+    "futureBattleIDs": [2120, 2132, 2139, 2153, 2158, 2174, 2177, 2195, 2196, 2215, 2217, 2234, 2238, 2253, 2259, 2272, 2280, 2291],
+    "previousBattleIDs": [3059, 1921, 6227, 1930, 6168, 1942, 6329, 1949, 6505, 1963, 6588, 1968, 1984, 1987, 2005, 2006, 2025, 2027, 2044, 2048, 2063, 2069, 2082, 2090, 2101, 2111],
+    "_totalBattlesWon": 14,
+    "_totalBattlesLost": 12,
+    "_seasonBattlesWon": 14,
+    "_seasonBattlesLost": 12,
+    "allKnightIDs": [2626, 2627, 2628, 2629, 2630, 2631, 2632, 2633, 2634, 2635, 2636, 2637, 2638, 2639, 2640, 2641, 2642, 2643, 2644, 2645]
+}
