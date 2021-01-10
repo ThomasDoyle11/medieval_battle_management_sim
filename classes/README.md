@@ -22,4 +22,6 @@ The Relationship script is used to calculate the relationship between two Person
 
 The class also keeps other data about the relationship, such as whether the two Persons are part of the same Dynasty, and makes use of data from the people such as their sex/gender to specify the names of relationships which depend on this.
 
+---
+
 #### It is important to note that this is just one way to model the entities and their relationships, and this could be subject to change. For example, at present each Person references only a single Squadron, their current one. This could, however, change in future versions when a Person may contain a history of previous Squadrons they have belonged too, and this may lead to the need for a further 'intermediary class' (PersonSquad) to contain any data necessary for that Persons time in that Squadron (such as `startDate` and `endDate`).
