@@ -16,6 +16,8 @@ The three entities mentioned reference each other heavily: Each Competition has 
 
 A Competition contains multiple Squadrons, a Squadron will be in multiple Competitions. There will be data specific to the relationship between each Squadron and Competition, such as the points earned from winning Battles, and this can be stored in the intermediary CompSquad class.
 
+This relationships between the entities can be crudely summarised [here](https://github.com/ThomasDoyle11/medieval_battle_management_sim/blob/master/classes/entity-relationship.png).
+
 ## Relationship
 
 The Relationship script is used to calculate the relationship between two Persons. It uses a recursive method which can be tuned as to how many generations it will search from the base Person. The script contains names for each relationship as is found in real life, from Mother-Daughter to 14th cousins twice-removed. This information is stored as 2 separate integers, the 'generation difference', which states the number of generations from the base Person to their relation, and the 'separation', which states how many generations from the base Person to the nearest common x-grandparent. It should be noted that the Relationship is unique from the base Person to their relation, and a function is provided which finds the inverse.
