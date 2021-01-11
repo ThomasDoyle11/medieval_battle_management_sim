@@ -13,3 +13,6 @@ That entity could be (with real-life equivalent examples):
 - A Region (such as Derbyshire)
 - A Squadron (such as Manchester United FC)
 
+In this area, you will find:
+- The 'classes' folder, which contains a collection of C# scripts used to render the Sigils in Unity
+- The 'data_generator' folder, which contains a collection of Python scripts used to generate JSON files which define Sigils.
