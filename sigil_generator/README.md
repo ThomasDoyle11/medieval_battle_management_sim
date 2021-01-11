@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Sigil Generator
 
 The 'Sigil Generator' tool is used to generate a 'Sigil' for an entity.
