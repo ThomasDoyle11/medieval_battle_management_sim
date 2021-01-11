@@ -150,62 +150,63 @@ placement_leading_corners_opp = ItemPlacements()
 placement_leading_corners_opp.AddItemPlacement([0.25,0.75], 0.475, False)
 placement_leading_corners_opp.AddItemPlacement([0.75,0.25], 0.475, True)
 
-# Generate striped Sigils - equally distanced stripes
-for i in range(4) :
-	# 4 different rotations
-	rotation = 45 * i
-	for j in range(2, 6) :
-		# Up to 5 stripes (alternating colours)
-		stripes = j
-		for k in range(2) :
-			# Alternate which effect is the background
-			newRectangles = Rectangles()
-			num_bars = math.ceil(j/2) - k * (j % 2)
-			for m in range(num_bars) :
-				# Add the rectangles to the Sigil
-				base_center = [0.5/j + (2*m+k)/j, 0.5]
-				base_width = 1/j
-				base_height = 1
+if __name__ == "__main__" :
+	# Generate striped Sigils - equally distanced stripes
+	for i in range(4) :
+		# 4 different rotations
+		rotation = 45 * i
+		for j in range(2, 6) :
+			# Up to 5 stripes (alternating colours)
+			stripes = j
+			for k in range(2) :
+				# Alternate which effect is the background
+				newRectangles = Rectangles()
+				num_bars = math.ceil(j/2) - k * (j % 2)
+				for m in range(num_bars) :
+					# Add the rectangles to the Sigil
+					base_center = [0.5/j + (2*m+k)/j, 0.5]
+					base_width = 1/j
+					base_height = 1
 
-				actual_center = RotateAboutCenter(base_center, rotation)
-				actual_width = base_width
-				actual_height = base_height
+					actual_center = RotateAboutCenter(base_center, rotation)
+					actual_width = base_width
+					actual_height = base_height
 
-				if i % 2 == 1 :
-					actual_width = actual_width * diag_scale
-					actual_height = actual_height * diag_scale
-					actual_center = CommonStretch(actual_center)
+					if i % 2 == 1 :
+						actual_width = actual_width * diag_scale
+						actual_height = actual_height * diag_scale
+						actual_center = CommonStretch(actual_center)
 
-				newRectangles.AddRectangle(actual_center, actual_width, actual_height, rotation)
-			newItemOrg = ItemOrganisations()
-			newItemOrg.AddItemOrganisation(placement_empty.allItemPlacements)
-			newItemOrg.AddItemOrganisation(placement_center_large_alt.allItemPlacements)
+					newRectangles.AddRectangle(actual_center, actual_width, actual_height, rotation)
+				newItemOrg = ItemOrganisations()
+				newItemOrg.AddItemOrganisation(placement_empty.allItemPlacements)
+				newItemOrg.AddItemOrganisation(placement_center_large_alt.allItemPlacements)
 
-			if j == 2 :
-				# Item Organisations specific to 2 stripes
-				base_centers = [[0.25,0.5], [0.75,0.5]]
-				actual_centers = [RotateAboutCenter(base_centers[0], rotation), RotateAboutCenter(base_centers[1], rotation)]
-				if i % 2 == 1 :
-					actual_centers = [CommonStretch(actual_centers[0]), CommonStretch(actual_centers[1])]
-				new_placement = ItemPlacements()
-				new_placement.AddItemPlacement(actual_centers[0], 0.475, True)
-				new_placement.AddItemPlacement(actual_centers[1], 0.475, True)
-				newItemOrg.AddItemOrganisation(new_placement.allItemPlacements)
-			
-			name = str(j) + " "
-			if i == 0 :
-				name += "vertical "
-			elif i == 2 :
-				name += "horizontal "
-			elif i % 2 == 1 :
-				name += "diagonal "
-			name += "stripes"
-			sigilPatternsObj.AddSigilPattern(name, newRectangles.allRectangles, [], [], newItemOrg.allItemOrganisations)
+				if j == 2 :
+					# Item Organisations specific to 2 stripes
+					base_centers = [[0.25,0.5], [0.75,0.5]]
+					actual_centers = [RotateAboutCenter(base_centers[0], rotation), RotateAboutCenter(base_centers[1], rotation)]
+					if i % 2 == 1 :
+						actual_centers = [CommonStretch(actual_centers[0]), CommonStretch(actual_centers[1])]
+					new_placement = ItemPlacements()
+					new_placement.AddItemPlacement(actual_centers[0], 0.475, True)
+					new_placement.AddItemPlacement(actual_centers[1], 0.475, True)
+					newItemOrg.AddItemOrganisation(new_placement.allItemPlacements)
 
-# Generate lined Sigils - like stripes but with thin lines
+				name = str(j) + " "
+				if i == 0 :
+					name += "vertical "
+				elif i == 2 :
+					name += "horizontal "
+				elif i % 2 == 1 :
+					name += "diagonal "
+				name += "stripes"
+				sigilPatternsObj.AddSigilPattern(name, newRectangles.allRectangles, [], [], newItemOrg.allItemOrganisations)
 
-# Generate chequered Sigils
+	# Generate lined Sigils - like stripes but with thin lines
 
-# Generate circled Sigils
+	# Generate chequered Sigils
+
+	# Generate circled Sigils
 
 sigilPatternsObj.save()
