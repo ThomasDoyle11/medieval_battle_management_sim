@@ -209,4 +209,4 @@ if __name__ == "__main__" :
 
 	# Generate circled Sigils
 
-sigilPatternsObj.save()
+	sigilPatternsObj.save()
