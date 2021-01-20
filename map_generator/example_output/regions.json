@@ -1,0 +1,575 @@
+{
+    "allRegions": [
+        {
+            "_regionID": 0,
+            "_code": "ARM",
+            "_name": "Aramaethia",
+            "_location": [
+                482.29314576053355,
+                497.50835843675975
+            ],
+            "_size": 497940,
+            "_xBounds": [
+                25,
+                950
+            ],
+            "_yBounds": [
+                19,
+                952
+            ],
+            "_regionAboveID": -1,
+            "_regionsBelowIDs": [
+                1,
+                6,
+                11,
+                16
+            ],
+            "_colourID": [
+                0,
+                0,
+                0,
+                255
+            ]
+        },
+        {
+            "_regionID": 1,
+            "_code": "MNL",
+            "_name": "Maineland",
+            "_location": [
+                357.0675967249231,
+                504.4124053191594
+            ],
+            "_size": 176118,
+            "_xBounds": [
+                103,
+                617
+            ],
+            "_yBounds": [
+                235,
+                746
+            ],
+            "_regionAboveID": 0,
+            "_regionsBelowIDs": [
+                2,
+                3,
+                4,
+                5
+            ],
+            "_colourID": [
+                127,
+                0,
+                0,
+                255
+            ]
+        },
+        {
+            "_regionID": 2,
+            "_code": "NES",
+            "_name": "Northeastshire",
+            "_location": [
+                434.0572272396525,
+                374.8226683217061
+            ],
+            "_size": 46726,
+            "_xBounds": [
+                225,
+                600
+            ],
+            "_yBounds": [
+                496,
+                746
+            ],
+            "_regionAboveID": 1,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                255,
+                0,
+                0,
+                255
+            ]
+        },
+        {
+            "_regionID": 3,
+            "_code": "UQL",
+            "_name": "Upper Quartile",
+            "_location": [
+                206.28120403554928,
+                511.67487725549506
+            ],
+            "_size": 48271,
+            "_xBounds": [
+                103,
+                300
+            ],
+            "_yBounds": [
+                283,
+                719
+            ],
+            "_regionAboveID": 1,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                0,
+                127,
+                0,
+                255
+            ]
+        },
+        {
+            "_regionID": 4,
+            "_code": "LQN",
+            "_name": "Lower Quadrant",
+            "_location": [
+                434.43389699487875,
+                617.7357619093632
+            ],
+            "_size": 51745,
+            "_xBounds": [
+                226,
+                617
+            ],
+            "_yBounds": [
+                235,
+                526
+            ],
+            "_regionAboveID": 1,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                255,
+                127,
+                0,
+                255
+            ]
+        },
+        {
+            "_regionID": 5,
+            "_code": "CTR",
+            "_name": "Centrico",
+            "_location": [
+                346.1019539760349,
+                498.99050245097885
+            ],
+            "_size": 29376,
+            "_xBounds": [
+                244,
+                449
+            ],
+            "_yBounds": [
+                403,
+                605
+            ],
+            "_regionAboveID": 1,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                0,
+                255,
+                0,
+                255
+            ]
+        },
+        {
+            "_regionID": 6,
+            "_code": "CRS",
+            "_name": "The Crescent",
+            "_location": [
+                747.552570588734,
+                659.6218521240169
+            ],
+            "_size": 141524,
+            "_xBounds": [
+                494,
+                950
+            ],
+            "_yBounds": [
+                68,
+                700
+            ],
+            "_regionAboveID": 0,
+            "_regionsBelowIDs": [
+                7,
+                8,
+                9,
+                10
+            ],
+            "_colourID": [
+                127,
+                255,
+                0,
+                255
+            ]
+        },
+        {
+            "_regionID": 7,
+            "_code": "MBC",
+            "_name": "Moonbeach",
+            "_location": [
+                705.84229891673,
+                651.8704392690488
+            ],
+            "_size": 48649,
+            "_xBounds": [
+                500,
+                832
+            ],
+            "_yBounds": [
+                182,
+                550
+            ],
+            "_regionAboveID": 6,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                0,
+                0,
+                127,
+                255
+            ]
+        },
+        {
+            "_regionID": 8,
+            "_code": "WXT",
+            "_name": "Waxington",
+            "_location": [
+                811.8344456994216,
+                434.04350207071303
+            ],
+            "_size": 29217,
+            "_xBounds": [
+                699,
+                950
+            ],
+            "_yBounds": [
+                400,
+                700
+            ],
+            "_regionAboveID": 6,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                127,
+                0,
+                127,
+                255
+            ]
+        },
+        {
+            "_regionID": 9,
+            "_code": "SLN",
+            "_name": "Selene",
+            "_location": [
+                858.9781919927581,
+                660.4292474180143
+            ],
+            "_size": 24303,
+            "_xBounds": [
+                770,
+                949
+            ],
+            "_yBounds": [
+                219,
+                499
+            ],
+            "_regionAboveID": 6,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                255,
+                0,
+                127,
+                255
+            ]
+        },
+        {
+            "_regionID": 10,
+            "_code": "FTL",
+            "_name": "Fort Twilight",
+            "_location": [
+                682.5814763054249,
+                836.17372633719
+            ],
+            "_size": 39355,
+            "_xBounds": [
+                494,
+                883
+            ],
+            "_yBounds": [
+                68,
+                256
+            ],
+            "_regionAboveID": 6,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                127,
+                127,
+                127,
+                255
+            ]
+        },
+        {
+            "_regionID": 11,
+            "_code": "LNG",
+            "_name": "Longyle",
+            "_location": [
+                481.72489246611065,
+                151.48290048227304
+            ],
+            "_size": 122752,
+            "_xBounds": [
+                49,
+                934
+            ],
+            "_yBounds": [
+                725,
+                952
+            ],
+            "_regionAboveID": 0,
+            "_regionsBelowIDs": [
+                12,
+                13,
+                14,
+                15
+            ],
+            "_colourID": [
+                255,
+                127,
+                127,
+                255
+            ]
+        },
+        {
+            "_regionID": 12,
+            "_code": "WLG",
+            "_name": "West Longyle",
+            "_location": [
+                183.84470340223692,
+                141.26149206535064
+            ],
+            "_size": 34154,
+            "_xBounds": [
+                49,
+                308
+            ],
+            "_yBounds": [
+                766,
+                951
+            ],
+            "_regionAboveID": 11,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                0,
+                255,
+                127,
+                255
+            ]
+        },
+        {
+            "_regionID": 13,
+            "_code": "HCD",
+            "_name": "Holycradle",
+            "_location": [
+                425.0970197285575,
+                143.08395130824061
+            ],
+            "_size": 35735,
+            "_xBounds": [
+                277,
+                602
+            ],
+            "_yBounds": [
+                725,
+                952
+            ],
+            "_regionAboveID": 11,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                127,
+                255,
+                127,
+                255
+            ]
+        },
+        {
+            "_regionID": 14,
+            "_code": "DKB",
+            "_name": "Darkberry",
+            "_location": [
+                638.2449367690407,
+                153.3763430636115
+            ],
+            "_size": 31551,
+            "_xBounds": [
+                536,
+                750
+            ],
+            "_yBounds": [
+                725,
+                945
+            ],
+            "_regionAboveID": 11,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                0,
+                0,
+                255,
+                255
+            ]
+        },
+        {
+            "_regionID": 15,
+            "_code": "TDW",
+            "_name": "Thunderwater",
+            "_location": [
+                822.3326764264265,
+                179.14329954954934
+            ],
+            "_size": 21312,
+            "_xBounds": [
+                721,
+                934
+            ],
+            "_yBounds": [
+                735,
+                930
+            ],
+            "_regionAboveID": 11,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                127,
+                0,
+                255,
+                255
+            ]
+        },
+        {
+            "_regionID": 16,
+            "_code": "DRP",
+            "_name": "The Drops",
+            "_location": [
+                214.39707364543148,
+                815.8005074201506
+            ],
+            "_size": 57546,
+            "_xBounds": [
+                25,
+                524
+            ],
+            "_yBounds": [
+                19,
+                450
+            ],
+            "_regionAboveID": 0,
+            "_regionsBelowIDs": [
+                17,
+                18,
+                19,
+                20
+            ],
+            "_colourID": [
+                255,
+                0,
+                255,
+                255
+            ]
+        },
+        {
+            "_regionID": 17,
+            "_code": "JKC",
+            "_name": "Jykelcent",
+            "_location": [
+                79.78227306023553,
+                679.3041640840705
+            ],
+            "_size": 17747,
+            "_xBounds": [
+                25,
+                175
+            ],
+            "_yBounds": [
+                219,
+                450
+            ],
+            "_regionAboveID": 16,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                127,
+                127,
+                255,
+                255
+            ]
+        },
+        {
+            "_regionID": 18,
+            "_code": "RTR",
+            "_name": "Randytim Rock",
+            "_location": [
+                269.86573713638614,
+                851.5966451978192
+            ],
+            "_size": 14129,
+            "_xBounds": [
+                180,
+                334
+            ],
+            "_yBounds": [
+                19,
+                239
+            ],
+            "_regionAboveID": 16,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                255,
+                127,
+                255,
+                255
+            ]
+        },
+        {
+            "_regionID": 19,
+            "_code": "CRM",
+            "_name": "Crombal",
+            "_location": [
+                447.986470064004,
+                887.3514542655755
+            ],
+            "_size": 12343,
+            "_xBounds": [
+                350,
+                524
+            ],
+            "_yBounds": [
+                39,
+                204
+            ],
+            "_regionAboveID": 16,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                0,
+                255,
+                255,
+                255
+            ]
+        },
+        {
+            "_regionID": 20,
+            "_code": "LBT",
+            "_name": "Little Bit",
+            "_location": [
+                118.50889172356871,
+                893.348615592405
+            ],
+            "_size": 13327,
+            "_xBounds": [
+                54,
+                185
+            ],
+            "_yBounds": [
+                30,
+                181
+            ],
+            "_regionAboveID": 16,
+            "_regionsBelowIDs": [],
+            "_colourID": [
+                255,
+                255,
+                255,
+                255
+            ]
+        }
+    ]
+}
