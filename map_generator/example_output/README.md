@@ -1,12 +1,22 @@
 # Example Output
 
-The folders '0', '1' and '2' all contain images of the generated borders at the given level, with 0 being the highest level (that which has no parent) and 2 being the lowest (that which has no children). In these folders, the individual images are generated in the space of the whole map, i.e. with empty space padding to the edge rather than any other regions of the same level.
+## 0, 1 and 2
 
-The 'alt' folder contains the similar structure of '0', '1' and '2' folders, but this time each image has all empty space cut out to the edge of the region, reducing the size of each image. Although this causes a loss of information in each image, the 'regions.json' file contains information such as the x and y bounds of the original region within the whole map, thus the image coupled with this data restores the lost information.
+These folders all contain images of the generated borders at the given level, with 0 being the highest level (that which has no parent) and 2 being the lowest (that which has no children). In these folders, the individual images are generated in the space of the whole map, i.e. with empty space padding to the edge rather than any other regions of the same level.
 
-The 'complete_maps' folder contains only complete maps, but split into regions for each level.
+## alt
 
-The 'border_map.png' and 'coord_map.png' files help to visualise the data used to prevent the maps. The 'coord_map.png' shows all coordinates used in generating the regions, whilst the 'border_map.png' shows the vectors used and the directions in which they were defined.
+This folder contains the similar structure of '0', '1' and '2' folders, but this time each image has all empty space cut out to the edge of the region, reducing the size of each image. Although this causes a loss of information in each image, the 'regions.json' file contains information such as the x and y bounds of the original region within the whole map, thus the image coupled with this data restores the lost information.
+
+## complete_maps
+
+This folder contains only complete maps, but split into regions for each level.
+
+## border_map.png and coord_map.png
+
+These files help to visualise the data used to prevent the maps. The 'coord_map.png' shows all coordinates used in generating the regions, whilst the 'border_map.png' shows the vectors used and the directions in which they were defined.
+
+## other
 
 There is one file that is generated that I have not included here due to it's larger size (~12MB), and that is the 'map_data.json' file, which essentially encodes every 'pixel' of the final output map as the ID of the lowest region at that pixel.
 
