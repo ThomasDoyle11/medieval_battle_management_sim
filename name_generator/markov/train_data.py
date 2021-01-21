@@ -34,13 +34,13 @@ def train_data(file_stem, include_non_alpha) :
 
     trained_data = {}
 
-    input_path = './data/' + file_stem
+    input_path = refine_data.root_dir + '/data/' + file_stem
     if include_non_alpha :
         input_path += "_non_alpha"
     input_path += '.txt'
 
     if not path.exists(input_path) :
-        print("Input file does not exist, attempting to create.")
+        print("Train data input file does not exist, attempting to create.")
         if refine_data.refine_data(file_stem, include_non_alpha) :
             print("Successfully created refined data, continuing.")
         else :
@@ -87,7 +87,7 @@ def train_data(file_stem, include_non_alpha) :
                     # Name is too short to reach max memory
                     None
 
-    save_location = './trained_data/' + file_stem
+    save_location = refine_data.root_dir + '/trained_data/' + file_stem
     if include_non_alpha :
         save_location += "_non_alpha"
     save_location += '.json'
@@ -106,3 +106,6 @@ def train_data(file_stem, include_non_alpha) :
     print("*****************************\n")
 
     return True
+
+if __name__ == "__main__" :
+    train_data(file_stem, include_non_alpha)

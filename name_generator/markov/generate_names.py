@@ -2,20 +2,21 @@ import json
 import random
 from os import path
 import train_data
+import refine_data
 
-# file_stem = "english_place_names"
+file_stem = "english_place_names"
 # file_stem = "UK_towns_and_cities"
 # file_stem = "US_place_names"
 # file_stem = "person_names"
-file_stem = "TES_place_names"
+# file_stem = "TES_place_names"
 include_non_alpha = True
 
 count = 100
 
-min_len = 5
-max_len = 50
+min_len = 4
+max_len = 15
 
-memory = 3
+memory = 4
 
 def choose_letter(location, ignore_end, force_end, trained_data) :
     next_level = trained_data
@@ -52,7 +53,9 @@ def generate_names(file_stem, include_non_alpha, memory, min_len, max_len, count
     print(" STARTING GENERATE NAMES PROCESS")
     print("*********************************\n")
 
-    input_file = './trained_data/' + file_stem
+    output = []
+
+    input_file = refine_data.root_dir + '/trained_data/' + file_stem
     if include_non_alpha :
         input_file += "_non_alpha"
     input_file += '.json'
@@ -113,7 +116,18 @@ def generate_names(file_stem, include_non_alpha, memory, min_len, max_len, count
                     print("New name only has the option of ending and hasn't reached minimum length.")
                 break
 
+        output += [new_place]
         print(new_place)
+
+    save_location = refine_data.root_dir + '/output/' + file_stem + "_gen"
+    if include_non_alpha :
+        save_location += "_non_alpha"
+    save_location += '.txt'
+
+    new_file = open(save_location,'w+')
+    for i in range(len(output)) :
+        new_file.write(output[i] + "\n")
+    new_file.close()
     print("\n*********************************")
     print(" FINISHED GENERATE NAMES PROCESS")
     print("*********************************\n")

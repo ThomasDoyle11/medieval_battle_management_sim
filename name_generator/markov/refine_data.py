@@ -12,6 +12,8 @@ include_non_alpha = True
 
 acceptable_non_alpha = ["'", "-", " ", "&"]
 
+root_dir = r"C:\Users\thoma\Documents\Python_Projects\PlaceNameGen\PlaceNameGenerator"
+
 def is_acceptable_alpha(name) :
     for i in name :
         if not i.isalpha() and i not in acceptable_non_alpha :
@@ -27,9 +29,9 @@ def refine_data(file_stem, include_non_alpha) :
     start_time = time.time()
 
     # Load data
-    input_path = "./raw_data/" + file_stem + "_raw.txt"
+    input_path = root_dir + "/raw_data/" + file_stem + "_raw.txt"
     if not path.exists(input_path) :
-        print("Input file does not exist, exiting.")
+        print("Refine data input file does not exist, exiting.")
         return False
 
     data = open(input_path).readlines()
@@ -65,7 +67,7 @@ def refine_data(file_stem, include_non_alpha) :
             # print(new_place + " contains non-alphabetical character(s).")
             None
 
-    save_location = './data/' + file_stem
+    save_location = root_dir + '/data/' + file_stem
     if include_non_alpha :
         save_location += "_non_alpha"
     save_location += '.txt'
@@ -84,3 +86,6 @@ def refine_data(file_stem, include_non_alpha) :
     print("******************************\n")
 
     return True
+
+if __name__ == "__main__" :
+    refine_data(file_stem, include_non_alpha)
