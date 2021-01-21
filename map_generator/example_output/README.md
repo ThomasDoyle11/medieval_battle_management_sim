@@ -16,7 +16,7 @@ This folder contains only complete maps, but split into regions for each level.
 
 These files help to visualise the data used to prevent the maps. The 'coord_map.png' shows all coordinates used in generating the regions, whilst the 'border_map.png' shows the vectors used and the directions in which they were defined.
 
-# map_data.json
+## map_data.json
 
 This file essentially encodes every 'pixel' of the final output map as the ID of the lowest region at that pixel, as a list of lists within a json. It is analogous to the bottom-level image and possibly has no use.
 
