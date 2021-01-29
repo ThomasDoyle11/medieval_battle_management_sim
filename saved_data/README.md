@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Saved Data
 
 This section shows some examples of the data that can saved from one session of 'Medieval Battle Management Simulation' and loaded in another.
