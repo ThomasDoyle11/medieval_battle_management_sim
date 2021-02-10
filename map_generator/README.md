@@ -7,3 +7,6 @@ This tool is a great example of why you document your own work (even for just yo
 It also emphasises why modularising your code is useful and important, something that is done here to some extent (many parts are split into different methods) but could be done much better. Modularisation keeps the project in manageable chunks, so that making edits in the future is much more painless, and any useful modules can also be reused.
 
 The 'example_output' folder shows an example of output that can be expected from the tool.
+
+<img width="90%" src="./example_output/complete_maps/whole_level_2.png">
+
