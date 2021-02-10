@@ -19,3 +19,5 @@ The trained data is written to a .json file, in the trained_data folder.
 ## generate_names.py and output
 
 The generate_names.py file takes a trained data .json file (which can be supplied by the train_data.py script or provided separately) and generates however many new names the user specifies. The user may also specify a minimum and maximum length of the new names, and if a name finishes before the minimum length is met, or hasn't reached the 'end' character by the time the maximum length is met, then the new name is discarded and it tries again. The output names are written to a new .txt file, in the output folder.
+
+[A list of made-up English place names](./output/english_place_names_gen_non_alpha.txt)
