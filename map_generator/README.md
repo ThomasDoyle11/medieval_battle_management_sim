@@ -8,5 +8,7 @@ It also emphasises why modularising your code is useful and important, something
 
 The 'example_output' folder shows an example of output that can be expected from the tool.
 
-<img width="90%" src="./example_output/complete_maps/whole_level_2.png">
+| Input | Output |
+|:-:|:-:|
+| <img width="90%" src="./example_output/border_map.png"> | <img width="90%" src="./example_output/complete_maps/whole_level_2.png"> |
 
