@@ -10,7 +10,7 @@ It also contains a method to return a randomly-generated Sigil using the data ge
 
 ## SigilPattern.cs
 
-This script describes the geometric pattern of a Sigil, which is built up using the following 'primitive' patterns: **SigilCircle.cs**, **SigilRectangle.cs** and **SigilLines.cs**. This allows for a large degree of freedom in forming patterns, but no infinite freedom. The script also contains all possible ways in which the Sigil Items can be placed for this particular pattern.
+This script describes the geometric pattern of a Sigil, which is built up using the following 'primitive' patterns: **SigilCircle.cs**, **SigilRectangle.cs** and **SigilLines.cs**. This allows for a large degree of freedom in forming patterns, but not infinite freedom. The script also contains all possible ways in which the Sigil Items can be placed for this particular pattern.
 
 ## SigilItemPlacement.cs and SigilItemOrganisation.cs
 
