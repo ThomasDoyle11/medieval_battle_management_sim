@@ -14,7 +14,7 @@ This folder contains only complete maps, but split into regions for each level.
 
 ## border_map.png and coord_map.png
 
-These files help to visualise the data used to prevent the maps. The 'coord_map.png' shows all coordinates used in generating the regions, whilst the 'border_map.png' shows the vectors used and the directions in which they were defined.
+These files help to visualise the data used to produce the maps. The 'coord_map.png' shows all coordinates used in generating the regions, whilst the 'border_map.png' shows the vectors used and the directions in which they were defined.
 
 ## map_data.json
 
